@@ -1,0 +1,41 @@
+h1{
+    background-color: cornflowerblue;
+    color: cornsilk;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;    
+}
+h2{
+    background-color: cornsilk;
+    color: cornflowerblue;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 16px;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    text-align: center;
+}
+h1, h2, h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    color: darkblue;
+    font-weight: lighter;
+    margin: 1rem;
+}
+ol{
+    font-weight: bolder;
+    margin: 2rem;
+}
+nav{
+    text-align: center;
+}
+ul{
+    margin-bottom: 32px;
+}
