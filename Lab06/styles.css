@@ -1,0 +1,28 @@
+header{
+    background-image: url(Images/smallflowers.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+}
+h1{
+    background-color: lavender;
+    padding: 0.5rem;
+}
+header>nav>a{
+    font-size: large;
+    background-color: lavender;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+}
+header>nav>a:hover{
+    background-color: darkslateblue; 
+    color: lavender; 
+    border: 1px solid #fff;  
+}
+h2{
+    color: darkslateblue;
+}
+img{
+    max-width: 30%;    
+}
