@@ -1,0 +1,44 @@
+div>p{
+    text-indent: 40px;
+}
+header>nav>a{
+    color: white;
+    background-color: #4e1c14;
+    font-size: 3.2rem;
+    padding: 2rem;
+}
+.im-fell-english-sc-regular{
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    background-color: #4e1c14;
+    padding: 5.5rem;
+    border-bottom: 3px solid black;
+}
+footer{
+    background-color: #4e1c14;
+    padding: 5.5rem;
+    border-top: 3px solid black;  
+}
+main{
+    background-color: #5e2529;
+}
+main>.logo-svg{
+    max-width: 45%;
+    padding: 8rem 2rem;
+}
+body>.outside-pic{
+    max-width: 50%;
+    float: right;
+    width: 1548px;
+    height: 636px;
+    border-radius: 50%;
+    object-fit: fill;
+    border: 10px solid white;
+    margin-top: 1rem;
+}
+body{
+    color: white;
+}
