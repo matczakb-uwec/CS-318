@@ -28,12 +28,14 @@ main{
 main>.logo-svg{
     max-width: 45%;
     padding: 8rem 2rem;
+    border: none;
 }
 body>.outside-pic{
     max-width: 50%;
     float: right;
     width: 1548px;
     height: 636px;
+    height: auto;
     border-radius: 50%;
     object-fit: fill;
     border: 10px solid white;
@@ -41,4 +43,160 @@ body>.outside-pic{
 }
 body{
     color: white;
+    background-color: #5e2529;
+}
+h2{
+    background-color: #4e1c14;
+    font-size: 3.2rem;
+    padding: 1.5rem 2.5rem;
+    margin: 2rem 5rem 3rem;
+    border-radius: 25px;
+    width: 15rem;
+    text-align: center;
+}
+img{
+    width: 40%; 
+    border: 19px solid #4e1c14;
+}
+.our-story article{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin: 0 5rem;
+    align-items: center;
+}
+article>.text-our-story{
+    font-size: 2rem;
+    background-color: #4e1c14;
+    padding: 6.3rem 2rem;
+}
+.menu article{
+    background-color: #4e1c14;
+    width: 35%;
+    margin: 0 5rem;
+    padding: .5rem 2rem;
+}
+h3{
+    font-size: 3.2rem;    
+}
+p, h4{
+    font-size: 2rem;
+}
+a{
+    font-size: 2rem;
+    color: white;
+}
+footer>h2{
+    background-color: #5e2529;
+    margin: 0 0;
+}
+div>.dinner{
+    position: relative;
+}
+div>.desserts{
+    position: absolute;
+    top: 99.5rem;
+    right: 5rem;
+}
+div>.drinks{
+    margin-top: 45px;
+    position: relative;     
+}
+.drinks-image1{
+    position: absolute;
+    top: 175rem;
+    right: 10rem;
+}
+.drinks-image2{
+    position: absolute;
+    top: 215rem;
+    right: 10rem;
+}
+footer{
+    margin-top: 8rem;
+}
+footer>div{
+    display: inline-block;
+    padding: 0 3.5rem;
+}
+@media (max-width: 1700px){
+    header>nav>a{
+        padding: 0 2rem;
+    }
+    .drinks-image1{
+        top: 185rem;
+    }
+}
+@media (max-width: 1500px){
+    div>.desserts{
+        top: 111rem;
+    }
+    .drinks-image1{
+        top: 195rem;
+    }
+    .drinks-image2{
+        top: 230rem;
+    }
+}
+@media (max-width: 500px){
+    body>.outside-pic{
+        max-width: 100%;
+    }
+    header>nav>a{
+        display: inline-block;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    main>.logo-svg{
+        padding: 1rem;
+    }
+    article>.text-our-story{
+        font-size: 1rem;
+        background-color: #4e1c14;
+        padding: 1rem 1rem;
+        width: 20rem;
+    }
+    p, h4{
+        font-size: 1rem;
+    }
+    footer>div>h3{
+        font-size: 2rem;
+    }
+    footer>div>a, p{
+        font-size: 1rem;
+    }
+    div>article>h3{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2rem;
+        width: 10rem;
+    }
+    .our-story article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .table-center{
+        width: 20rem;
+    }
+    .logo-svg{
+        max-width: 100%;
+        width: 60rem; 
+    }
+    div>.dinner{
+        width: 20rem;
+    }
+    div>.desserts{
+        width: 20rem;
+        top: 138rem;
+        left: 0;
+    }
+    div>.drinks{
+        width: 20rem;
+        top: 40rem;
+        left: 0;
+    }
+    footer{
+        top: 100rem;
+    }
 }
