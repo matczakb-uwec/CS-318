@@ -189,14 +189,25 @@ footer>div{
     div>.desserts{
         width: 20rem;
         top: 138rem;
-        left: 0;
+        left: .5rem;
     }
     div>.drinks{
         width: 20rem;
         top: 40rem;
         left: 0;
+        position: relative;
     }
     footer{
-        top: 100rem;
+        top: 250rem;
+        position: absolute;
+    }
+    .drinks-image1{
+        max-width: 100%;
+        position: absolute;
+        top: 228rem;
+    }
+    .drinks-image2{
+        position: absolute;
+        top: 240rem;
     }
 }
