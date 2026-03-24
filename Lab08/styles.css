@@ -28,7 +28,7 @@ nav>a:hover{
 .animal-background{
     position: fixed;
     top: -12rem;
-    width: 100%;
+    width: 100%;/*Should be 200 not 100*/
     left: -51%;
     height: 50rem;
     z-index: -1;
