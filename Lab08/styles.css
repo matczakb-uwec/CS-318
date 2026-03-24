@@ -28,7 +28,7 @@ nav>a:hover{
 .animal-background{
     position: fixed;
     top: -12rem;
-    width: 100%;/*Should be 200 not 100*/
+    width: 200%;
     left: -51%;
     height: 50rem;
     z-index: -1;
@@ -42,7 +42,7 @@ section>h2{
     background-size: cover;
     margin: 0;
     position: relative;
-    border-bottom: 2rem solid #e2512d ;
+    border-bottom: 2rem solid #e2512d;
 }
 section{
     background-color: #A33B20;
