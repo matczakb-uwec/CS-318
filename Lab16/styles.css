@@ -12,7 +12,8 @@ header{
     background: linear-gradient(180deg, rgba(9,2,29,1) 0%, rgba(9,2,29,0) 100%);
     position: fixed;  
     width: 100%;
-    padding: 1rem;  
+    padding: 1rem; 
+    z-index: 3; 
 }
 header a{
     color: #fff;
@@ -35,12 +36,15 @@ header a:hover{
     display: block;
     bottom: 10.5rem;
     left: 10%;
+    z-index: 1;
+    animation: wheel 2.5s ease-in-out .4s infinite alternate forwards;
 }
 .planet{
     width: 5rem;
     height: 5rem;
     position: absolute;
     left: 30%;
+    animation: rise 10s ease-in 1 forwards;
 }
 .mars{
     position: absolute;
@@ -49,6 +53,7 @@ header a:hover{
     background-color: #913a25;
     border-top: 1rem solid #d15f44;
     bottom: 0;
+    z-index: 2;
 }
 .rover:after{
     content: url(Images/dish.svg);
@@ -57,4 +62,111 @@ header a:hover{
     position: absolute;
     left: 2.25rem;
     top: 1.6rem;
+    z-index: 1;
+    transform-origin: center bottom;
+    animation: rotate 2s linear infinite alternate;
+}
+.mars h1{
+    margin-left: 5rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+@keyframes rise{
+    from{
+        bottom: 0;
+        transform: rotate(0) scale(1);
+    }
+    to{
+        bottom: 75%;
+        transform: rotate(180deg) scale(2);
+    }
+}
+@keyframes rotate{
+    from{
+        transform: rotate(-5deg);
+    }
+    to{
+        transform: rotate(-33deg);
+    }
+}
+@keyframes wheel{
+    from{
+        left: 10rem;        
+    }  
+    to{
+        left: 85rem;
+    }  
+}
+.rover:hover{
+    animation-play-state: paused;
+}
+section{
+    padding: 1rem;
+}
+h2{
+    color: #d15f44;
+    margin-top: 5rem;
+}
+.robots{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.robots figure{
+    justify-self: center;
+}
+iframe{
+    display: block;
+    margin: 1rem auto 3rem;
+    max-width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1rem 1fr;
+}
+.grid hr{
+    grid-area: 1/2/10/3;
+}
+.grid p{
+    margin: 1rem;
+}
+.grid h3{
+    margin: 1rem;
+    justify-self: right;
+}
+.maps{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+figcaption, h3{
+    transition: color .2s ease-in-out;
+}
+.figcaption:hover, h3:hover{
+    color: #d15f44;
+}
+@media (min-width:600px){
+    section{
+        padding: 1rem 5rem;
+    }
+}
+.alien{
+    width: 8rem;
+    height: 10rem;
+    transform: rotate(270deg);
+    margin-top: 8rem;
+    margin-left: 115rem;
+    animation-name: alien;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: .2s;
+    animation-direction: alternate;
+}
+@keyframes alien{
+    from{
+        left: 115rem;
+    }
+    to{
+        left: 95rem;
+    }
 }
