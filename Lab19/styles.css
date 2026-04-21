@@ -24,7 +24,7 @@ header nav{
     position: fixed;
     width: 100%;
     top: 4.75rem;
-    left: 100%;
+    left: -100%;
     transition-property: left;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
