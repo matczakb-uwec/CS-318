@@ -72,7 +72,6 @@ article>.text-our-story{
 }
 .menu article{
     background-color: #4e1c14;
-    width: 35%;
     margin: 0 5rem;
     padding: .5rem 2rem;
 }
@@ -90,6 +89,7 @@ footer>h2{
     background-color: #5e2529;
     margin: 0 0;
 }
+
 div>.dinner{
     position: relative;
 }
@@ -112,6 +112,18 @@ div>.drinks{
     top: 215rem;
     right: 10rem;
 }
+/*
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menu>div, .menu>img{
+    width: 45%;
+}*/
 footer{
     margin-top: 8rem;
 }
