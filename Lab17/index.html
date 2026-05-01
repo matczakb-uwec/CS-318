@@ -17,32 +17,31 @@
             <hr>
             <hr>
         </div>
-        <nav class="toggle-nav">
-            <a href="">about</a>
-            <a href="">hours</a>
-            <a href="">order <img src="Images/wicker-basket.svg" alt="Cartoon wicker basket"></a>
+        <nav class="nav">
+            <a href="#about">about</a>
+            <a href="#hours">hours</a>
+            <a href="#order">order <img src="Images/wicker-basket.svg" alt="Cartoon wicker basket"></a>
         </nav>  
     </header> 
     <main>
         <section class="croissant">
-            <div><h1>The Butter Half Bakery</h1>
-            <h2>"I'm gonna eat you 'cause baby you're my butter half"</h2></div>
+            <div><h1><b>The Butter Half Bakery</b></h1>
+            <h2><b>"I'm gonna eat you 'cause baby you're my butter half"</b></h2></div>
         </section> 
         <section class="about">
-            <div>
+            <div class="bread">
                 <img src="Images/about.png" alt="Bread loaves">  
-                <h1>About the Bakery</h1> 
-                <p>We make all of our food from scratch, ranging from authentic French baked goods to an assortment of American offerings, and we're proud to provide locally sourced items,and premium organic coffees courtesy of Backroads Coffee.</p>
-                <p>Our creations range from buttery croissants and flaky pain au chocolat to elegant tarts, éclairs, and macarons. Often featuring rich, smooth fillings like pastry cream, ganache, or fruit compotes, patisserie treats are known for their light, airy textures and carefully crafted layers. The balance of sweetness and subtle complexity in each bite reflects a tradition of craftsmanship passed down through generations.</p>  
+                <h1 id="about">About the Bakery</h1> 
+                <p>We make all of our food from scratch, ranging from authentic French baked goods to an assortment of American offerings, and we're proud to provide locally sourced items,and premium organic coffees courtesy of Backroads Coffee. <br> Our creations range from buttery croissants and flaky pain au chocolat to elegant tarts, éclairs, and macarons. Often featuring rich, smooth fillings like pastry cream, ganache, or fruit compotes, patisserie treats are known for their light, airy textures and carefully crafted layers. The balance of sweetness and subtle complexity in each bite reflects a tradition of craftsmanship passed down through generations.</p>  
             </div> 
-            <div>
+            <div class="coffee">
                 <img src="Images/classic-coffee.png" alt="Cup of coffee">
                 <h1>About the Coffee</h1>
                 <p>Established in 1987, Backroads Coffee & Tea began as a small community coffee shop. At the forefront of the 2nd wave specialty coffee movement, Backroads Coffee & Tea offered the Hayward community craft-made specialty coffee beverages, small-batch roasted coffees, and an assortment of imported fine teas. Backroads Coffee & Tea thrived throughout the early nineties roasting specialty coffees for their own use, as well as, offering their customers the ability to purchase their coffees through mail order or direct in-house.</p>
             </div>   
-            <div>
+            <div class="hour">
                 <img src="Images/timer.svg" alt="Timer">
-                <h1>Hours</h1>
+                <h1 id="hours">Hours</h1>
                 <ul>
                     <li>Monday - Thursday: 5 am to 4 pm</li>
                     <li>Friday: 6 am to 4 pm</li>
@@ -51,6 +50,78 @@
                 </ul>
             </div>  
         </section>
+        <section class="goods">
+            <div>
+                <img src="Images/cookie.svg" alt="Cookie">
+                <h1 id="order">The Goods</h1>
+                <img src="Images/croissant.svg" alt="Croissant">
+                <img src="Images/bread.svg" alt="Bread">
+                <img src="Images/pie.svg" alt="Pie">
+                <img src="Images/donut.svg" alt="Donut">
+                <img src="Images/pudding.svg" alt="Pudding">
+            </div>
+        </section>
+        <section class="treats">
+            <div class="turtle">
+                <h2>Turtle Danish</h2>
+                <img src="Images/danish.png" alt="Turtle danish">
+                <div>
+                    <label>Qty.</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <button>Add</button>
+            </div>
+            <div class="macarons">
+                <h2>Macarons</h2>
+                <img src="Images/macarons.png" alt="Macarons">
+                <div>
+                    <label>Qty.</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <button>Add</button>
+            </div>
+            <div class="strawberry">
+                <h2>Strawberry Meringue</h2>
+                <img src="Images/strawberry.png" alt="Strawberry Meringue">
+                <div>
+                    <label>Qty.</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <button>Add</button>
+            </div>
+            <div class="peach">
+                <h2>Peach & Raspberry Tart</h2>
+                <img src="Images/peach-tart.png" alt="Peach & Raspberry Tart">
+                <div>
+                    <label>Qty.</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <button>Add</button>
+            </div>
+            <div class="chocolate">
+                <h2>Chocolate & Raspberry Tart</h2>
+                <img src="Images/chocolate-rasberry-tart.png" alt="Chocolate & Raspberry Tart">
+                <div>
+                    <label>Qty.</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <button>Add</button>
+            </div>
+            <div class="fruit">
+                <h2>Fresh Fruit & Lemon Custard Tart</h2>
+                <img src="Images/fruit-tart.png" alt="Fresh Fruit & Lemon Custard Tart">
+                <div>
+                    <label>Qty.</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <button>Add</button>
+            </div>
+        </section>
     </main>
+    <footer>
+        <img src="Images/facebook.svg" alt="Facebook icon"> 
+        <img src="Images/instagram.svg" alt="Instagram icon">
+        <img src="Images/pinterest.svg" alt="Pinterest icon">      
+    </footer>
 </body>
 </html>

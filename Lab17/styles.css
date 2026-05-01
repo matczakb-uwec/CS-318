@@ -17,7 +17,7 @@ header img{
 }
 header nav{
     background-color: #24ac92;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 8.75rem;
     left: 100%;
@@ -78,4 +78,135 @@ header nav a img{
     max-width: fit-content;
     display: block;
     margin: auto;
+}
+.goods div img{
+    width: 50px;
+}
+.goods div{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0575c;
+    color: white;
+    padding: 1.5rem .8rem 1.5rem .8rem;
+}
+.treats img{
+    width: 50%;
+    margin-bottom: .5rem;
+}
+.treats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.turtle{
+    grid-area: 1/1/2/2;
+}
+.macarons{
+    grid-area: 1/2/2/3;
+}
+.treats>div{
+    background-color: white;
+    margin: .7rem;
+    padding: 1rem;
+    box-shadow: 7px 7px 7px 2px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    text-align: center;
+}
+.treats div h2{
+    color: #f0575c;
+} 
+.treats label{
+    color: #3b484a;
+    font-weight: 900;
+}
+.treats input{
+    border: 1.5px solid #24ac92; 
+    border-radius: 5px; 
+    background-color: #fdf7e5;  
+}
+.treats button{
+    width: 87%;
+    margin: .5rem;
+    background-color: #f0575c;
+    color: white;
+    border: none;
+    padding: .5rem;
+    font-size: larger;
+    border-radius: 5px;
+}
+footer{
+    background-color: #24ac92;
+    margin-top: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+footer img{
+    height: 60px;
+    padding: 2rem;
+    text-align: center;
+}
+@media (min-width:1400px){
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header img{
+        width: 30%;
+        grid-area: 1/1/2/2;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav{
+        background-color: #fdf7e5;
+        grid-area: 1/2/2/3;
+        display: flex;
+        top: 3rem;
+        left: 60%;
+    }
+    header .nav a{
+        color: #f0575c;
+        border: none;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        font-weight: bolder;
+    }
+    main{
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+    .croissant{
+        padding-top: 5rem;
+        padding-bottom: 7rem;
+        margin-bottom: 2rem;
+    }
+    .about>div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .about>div>img{
+        grid-area: 1/1/2/2;
+        width: 70%;
+    }
+    .about>div>p, ul{
+        grid-area: 1/2/2/3;
+        margin-top: 5rem;
+    }
+    .about>div>h1{
+        grid-area: 1/2/2/3;
+    }
+    .goods div img{
+        width: 70px;
+    }
+    .treats{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .turtle{
+        grid-area: 1/1/2/2;
+    }
+    .macarons{
+        grid-area: 1/2/2/3;
+    }
 }
