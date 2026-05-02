@@ -1,0 +1,98 @@
+@media (min-width: 400px){
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lavender;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+header>nav>a{
+    margin: 3rem 2rem;
+    background-color: blueviolet;
+    padding: .5rem;
+    color: lavender;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+header nav{
+    margin-top: 2rem;
+}
+header a{
+    text-decoration: none;
+    font-size: 40px;
+}
+main{
+    margin: 3rem;
+}
+p{
+    color: darkslateblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1, h2{
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.about>p{
+    grid-area: 1/1/2/2;
+    font-size: 30px;
+}
+.about img{
+    width: 80%;
+    grid-area: 1/2/2/4;
+    margin-left: 5rem;
+    border: 3px solid blueviolet;
+    border-radius: 15px;
+}
+.types div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem;
+    margin-top: 5rem;
+}
+.pixie{
+    grid-area: 1/1/2/2;
+}
+.sprite{
+    grid-area: 1/2/2/3;
+}
+.brownie{
+    grid-area: 1/3/2/4;
+}
+.types img{
+    width: 60%;
+    height: 25rem;
+    animation: rotate 2s linear infinite alternate;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(-5deg);
+    }
+    to{
+        transform: rotate(-11deg);
+    }
+}
+.types h1{
+    text-align: center;
+}
+form>label{
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0.25rem;
+    color: darkslateblue;
+}
+input{
+    border: 2px solid blueviolet;
+}
+.actions{
+    margin-top: 2rem;
+}
+.create{
+    text-align: center;
+}
+}
